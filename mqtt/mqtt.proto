@@ -1,0 +1,11 @@
+syntax = "proto3";
+package mqtt;
+option go_package = ".;mqtt";
+
+message DataPacket {
+  bytes Data = 1;
+}
+
+service MqttService {
+  rpc NewClient(stream DataPacket) returns (stream DataPacket) {}
+}

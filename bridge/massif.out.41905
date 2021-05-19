@@ -1,0 +1,1100 @@
+desc: (none)
+cmd: ./bridge
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=332024
+mem_heap_B=56
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=337582
+mem_heap_B=56
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n1: 56 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 56 0x401553: x_cgo_init (in /home/felix/inovex/thesis/bridge/bridge)
+#-----------
+snapshot=3
+#-----------
+time=337582
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1074151
+mem_heap_B=24
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1078143
+mem_heap_B=312
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1087263
+mem_heap_B=336
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1087639
+mem_heap_B=624
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1098075
+mem_heap_B=648
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1099312
+mem_heap_B=912
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1120366
+mem_heap_B=936
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1123746
+mem_heap_B=1200
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1147941
+mem_heap_B=1224
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1148317
+mem_heap_B=1512
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1172122
+mem_heap_B=1536
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1172498
+mem_heap_B=1824
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1406407
+mem_heap_B=1824
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1824 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 1728 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n2: 96 0x40197D: runtime/cgo(.text) (in /home/felix/inovex/thesis/bridge/bridge)
+  n2: 72 0x43DCBA: runtime.newm (/usr/lib/go/src/runtime/proc.go:1822)
+   n2: 48 0x43E308: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+    n1: 24 0x43E4F1: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2007)
+     n1: 24 0x43E976: runtime.stoplockedm (/usr/lib/go/src/runtime/proc.go:2081)
+      n1: 24 0x44076B: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2617)
+       n1: 24 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+        n1: 24 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+         n0: 24 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n2: 24 0x43E845: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+     n1: 24 0x43FFB8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+      n1: 24 0x440598: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+       n1: 24 0x43CB52: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+        n1: 24 0x43CA8D: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+         n0: 24 0x4019CB: runtime/cgo(.text) (in /home/felix/inovex/thesis/bridge/bridge)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 24 0x46459E: runtime.main.func1 (/usr/lib/go/src/runtime/proc.go:135)
+    n1: 24 0x469EC5: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+     n0: 24 0x43CA1F: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+  n1: 24 0xC00004E6F7: ???
+   n1: 24 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n1: 24 0x1FFEFFFB7F: ???
+     n1: 24 0x464D30: runtime.malg.func1 (/usr/lib/go/src/runtime/proc.go:3524)
+      n1: 24 0x469EC5: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 24 0x43CA1F: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+        n0: 24 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=1406407
+mem_heap_B=1800
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1422855
+mem_heap_B=1776
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1429236
+mem_heap_B=1752
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1637071
+mem_heap_B=1728
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=3968263
+mem_heap_B=2200
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=3969941
+mem_heap_B=6455
+mem_heap_extra_B=129
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=3971846
+mem_heap_B=6892
+mem_heap_extra_B=276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=3974818
+mem_heap_B=7277
+mem_heap_extra_B=403
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=3977329
+mem_heap_B=7651
+mem_heap_extra_B=549
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=3979335
+mem_heap_B=3170
+mem_heap_extra_B=598
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=3981315
+mem_heap_B=7866
+mem_heap_extra_B=654
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=3984518
+mem_heap_B=3770
+mem_heap_extra_B=646
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=3986764
+mem_heap_B=3770
+mem_heap_extra_B=646
+mem_stacks_B=0
+heap_tree=detailed
+n6: 3770 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 1728 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC00013E5BF: ???
+       n1: 1166 0xC00013E57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n0: 1166 0x1: ???
+ n2: 472 0x490888E: __fopen_internal (in /usr/lib/libc-2.32.so)
+  n1: 472 0x49B2407: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+   n1: 472 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+    n1: 472 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+     n1: 472 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+      n1: 472 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+       n1: 472 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+        n1: 472 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+         n1: 472 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+          n1: 472 0xC00013E5BF: ???
+           n1: 472 0xC00013E57F: ???
+            n1: 472 0xFFFFFFFFFFFFFFFE: ???
+             n0: 472 0x1: ???
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC00013E5BF: ???
+      n1: 260 0xC00013E57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n0: 260 0x1: ???
+ n1: 88 0x49B43EE: get_locked_global (in /usr/lib/libc-2.32.so)
+  n1: 88 0x49B47BC: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+   n1: 88 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+    n1: 88 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+     n1: 88 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+      n1: 88 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+       n1: 88 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+        n1: 88 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+         n1: 88 0xC00013E5BF: ???
+          n1: 88 0xC00013E57F: ???
+           n1: 88 0xFFFFFFFFFFFFFFFE: ???
+            n0: 88 0x1: ???
+ n0: 56 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=3989143
+mem_heap_B=3890
+mem_heap_extra_B=662
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=3991074
+mem_heap_B=8002
+mem_heap_extra_B=678
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=3992932
+mem_heap_B=8034
+mem_heap_extra_B=694
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=3994485
+mem_heap_B=8062
+mem_heap_extra_B=706
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=3997204
+mem_heap_B=8346
+mem_heap_extra_B=750
+mem_stacks_B=0
+heap_tree=detailed
+n8: 8346 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4907E03: _IO_file_doallocate (in /usr/lib/libc-2.32.so)
+  n1: 4096 0x491670F: _IO_doallocbuf (in /usr/lib/libc-2.32.so)
+   n2: 4096 0x491564B: _IO_file_underflow@@GLIBC_2.2.5 (in /usr/lib/libc-2.32.so)
+    n2: 4096 0x4909687: getdelim (in /usr/lib/libc-2.32.so)
+     n1: 4096 0x49B27ED: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+      n1: 4096 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+       n1: 4096 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+        n1: 4096 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+         n1: 4096 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+          n1: 4096 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+           n1: 4096 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+            n1: 4096 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+             n1: 4096 0xC00013E5BF: ???
+              n1: 4096 0xC00013E57F: ???
+               n1: 4096 0xFFFFFFFFFFFFFFFE: ???
+                n0: 4096 0x1: ???
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 1728 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC00013E5BF: ???
+       n1: 1166 0xC00013E57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n0: 1166 0x1: ???
+ n2: 472 0x490888E: __fopen_internal (in /usr/lib/libc-2.32.so)
+  n1: 472 0x49B2407: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+   n1: 472 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+    n1: 472 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+     n1: 472 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+      n1: 472 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+       n1: 472 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+        n1: 472 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+         n1: 472 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+          n1: 472 0xC00013E5BF: ???
+           n1: 472 0xC00013E57F: ???
+            n1: 472 0xFFFFFFFFFFFFFFFE: ???
+             n0: 472 0x1: ???
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 288 in 8 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC00013E5BF: ???
+      n1: 260 0xC00013E57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n0: 260 0x1: ???
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC00013E5BF: ???
+            n1: 216 0xC00013E57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n0: 216 0x1: ???
+ n2: 120 0x49094B3: getdelim (in /usr/lib/libc-2.32.so)
+  n1: 120 0x49B27ED: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+   n1: 120 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+    n1: 120 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+     n1: 120 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+      n1: 120 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+       n1: 120 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+        n1: 120 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+         n1: 120 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+          n1: 120 0xC00013E5BF: ???
+           n1: 120 0xC00013E57F: ???
+            n1: 120 0xFFFFFFFFFFFFFFFE: ???
+             n0: 120 0x1: ???
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=3998772
+mem_heap_B=3610
+mem_heap_extra_B=694
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=4002018
+mem_heap_B=3637
+mem_heap_extra_B=707
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=4002775
+mem_heap_B=4866
+mem_heap_extra_B=742
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=4007243
+mem_heap_B=4922
+mem_heap_extra_B=758
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=4009007
+mem_heap_B=5114
+mem_heap_extra_B=766
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=4071205
+mem_heap_B=5586
+mem_heap_extra_B=782
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=4071862
+mem_heap_B=9682
+mem_heap_extra_B=790
+mem_stacks_B=0
+heap_tree=detailed
+n9: 9682 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4907E03: _IO_file_doallocate (in /usr/lib/libc-2.32.so)
+  n2: 4096 0x491670F: _IO_doallocbuf (in /usr/lib/libc-2.32.so)
+   n1: 4096 0x4913DB4: _IO_file_seekoff@@GLIBC_2.2.5 (in /usr/lib/libc-2.32.so)
+    n1: 4096 0x4911D2C: fseeko (in /usr/lib/libc-2.32.so)
+     n1: 4096 0x49B7DDB: __nss_files_fopen (in /usr/lib/libc-2.32.so)
+      n1: 4096 0x2EB7C685: ???
+       n1: 4096 0x497C145: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+        n1: 4096 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+         n1: 4096 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+          n1: 4096 0xC00013E5BF: ???
+           n1: 4096 0xC00013E57F: ???
+            n1: 4096 0xFFFFFFFFFFFFFFFE: ???
+             n0: 4096 0x1: ???
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 1728 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC00013E5BF: ???
+                  n1: 1202 0xC00013E57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n0: 1202 0x1: ???
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC00013E5BF: ???
+       n1: 1166 0xC00013E57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n0: 1166 0x1: ???
+ n2: 472 0x490888E: __fopen_internal (in /usr/lib/libc-2.32.so)
+  n1: 472 0x49B7DC1: __nss_files_fopen (in /usr/lib/libc-2.32.so)
+   n1: 472 0x2EB7C685: ???
+    n1: 472 0x497C145: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+     n1: 472 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+      n1: 472 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+       n1: 472 0xC00013E5BF: ???
+        n1: 472 0xC00013E57F: ???
+         n1: 472 0xFFFFFFFFFFFFFFFE: ???
+          n0: 472 0x1: ???
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 350 in 15 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC00013E5BF: ???
+      n1: 260 0xC00013E57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n0: 260 0x1: ???
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC00013E5BF: ???
+            n1: 216 0xC00013E57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n0: 216 0x1: ???
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC00013E5BF: ???
+                n1: 192 0xC00013E57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n0: 192 0x1: ???
+#-----------
+snapshot=42
+#-----------
+time=4078875
+mem_heap_B=9682
+mem_heap_extra_B=790
+mem_stacks_B=0
+heap_tree=detailed
+n9: 9682 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4907E03: _IO_file_doallocate (in /usr/lib/libc-2.32.so)
+  n2: 4096 0x491670F: _IO_doallocbuf (in /usr/lib/libc-2.32.so)
+   n1: 4096 0x4913DB4: _IO_file_seekoff@@GLIBC_2.2.5 (in /usr/lib/libc-2.32.so)
+    n1: 4096 0x4911D2C: fseeko (in /usr/lib/libc-2.32.so)
+     n1: 4096 0x49B7DDB: __nss_files_fopen (in /usr/lib/libc-2.32.so)
+      n1: 4096 0x2EB7C685: ???
+       n1: 4096 0x497C145: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+        n1: 4096 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+         n1: 4096 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+          n1: 4096 0xC00013E5BF: ???
+           n1: 4096 0xC00013E57F: ???
+            n1: 4096 0xFFFFFFFFFFFFFFFE: ???
+             n0: 4096 0x1: ???
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 1728 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC00013E5BF: ???
+                  n1: 1202 0xC00013E57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n0: 1202 0x1: ???
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC00013E5BF: ???
+       n1: 1166 0xC00013E57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n0: 1166 0x1: ???
+ n2: 472 0x490888E: __fopen_internal (in /usr/lib/libc-2.32.so)
+  n1: 472 0x49B7DC1: __nss_files_fopen (in /usr/lib/libc-2.32.so)
+   n1: 472 0x2EB7C685: ???
+    n1: 472 0x497C145: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+     n1: 472 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+      n1: 472 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+       n1: 472 0xC00013E5BF: ???
+        n1: 472 0xC00013E57F: ???
+         n1: 472 0xFFFFFFFFFFFFFFFE: ???
+          n0: 472 0x1: ???
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 350 in 15 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC00013E5BF: ???
+      n1: 260 0xC00013E57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n0: 260 0x1: ???
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC00013E5BF: ???
+            n1: 216 0xC00013E57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n0: 216 0x1: ???
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC00013E5BF: ???
+                n1: 192 0xC00013E57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n0: 192 0x1: ???
+#-----------
+snapshot=43
+#-----------
+time=4080407
+mem_heap_B=9912
+mem_heap_extra_B=824
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=4092679
+mem_heap_B=9912
+mem_heap_extra_B=824
+mem_stacks_B=0
+heap_tree=peak
+n11: 9912 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x4907E03: _IO_file_doallocate (in /usr/lib/libc-2.32.so)
+  n2: 4096 0x491670F: _IO_doallocbuf (in /usr/lib/libc-2.32.so)
+   n2: 4096 0x491564B: _IO_file_underflow@@GLIBC_2.2.5 (in /usr/lib/libc-2.32.so)
+    n2: 4096 0x4909687: getdelim (in /usr/lib/libc-2.32.so)
+     n1: 4096 0x497A42F: gaiconf_init (in /usr/lib/libc-2.32.so)
+      n1: 4096 0x488218E: __pthread_once_slow (in /usr/lib/libpthread-2.32.so)
+       n1: 4096 0x497D06F: getaddrinfo (in /usr/lib/libc-2.32.so)
+        n1: 4096 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+         n1: 4096 0xC00013E5BF: ???
+          n1: 4096 0xC00013E57F: ???
+           n1: 4096 0xFFFFFFFFFFFFFFFE: ???
+            n0: 4096 0x1: ???
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 1728 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC00013E5BF: ???
+                  n1: 1202 0xC00013E57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n0: 1202 0x1: ???
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC00013E5BF: ???
+       n1: 1166 0xC00013E57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n0: 1166 0x1: ???
+ n2: 472 0x490888E: __fopen_internal (in /usr/lib/libc-2.32.so)
+  n1: 472 0x497A3B8: gaiconf_init (in /usr/lib/libc-2.32.so)
+   n1: 472 0x488218E: __pthread_once_slow (in /usr/lib/libpthread-2.32.so)
+    n1: 472 0x497D06F: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 472 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 472 0xC00013E5BF: ???
+       n1: 472 0xC00013E57F: ???
+        n1: 472 0xFFFFFFFFFFFFFFFE: ???
+         n0: 472 0x1: ???
+  n0: 0 in 4 places, all below massif's threshold (1.00%)
+ n0: 320 in 15 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC00013E5BF: ???
+      n1: 260 0xC00013E57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n0: 260 0x1: ???
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC00013E5BF: ???
+            n1: 216 0xC00013E57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n0: 216 0x1: ???
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC00013E5BF: ???
+                n1: 192 0xC00013E57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n0: 192 0x1: ???
+ n1: 140 0x497B865: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+  n1: 140 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+   n1: 140 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+    n1: 140 0xC00013E5BF: ???
+     n1: 140 0xC00013E57F: ???
+      n1: 140 0xFFFFFFFFFFFFFFFE: ???
+       n0: 140 0x1: ???
+ n2: 120 0x49094B3: getdelim (in /usr/lib/libc-2.32.so)
+  n1: 120 0x497A42F: gaiconf_init (in /usr/lib/libc-2.32.so)
+   n1: 120 0x488218E: __pthread_once_slow (in /usr/lib/libpthread-2.32.so)
+    n1: 120 0x497D06F: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 120 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 120 0xC00013E5BF: ???
+       n1: 120 0xC00013E57F: ???
+        n1: 120 0xFFFFFFFFFFFFFFFE: ???
+         n0: 120 0x1: ???
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=4093612
+mem_heap_B=6784
+mem_heap_extra_B=800
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=4102947
+mem_heap_B=6774
+mem_heap_extra_B=786
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=4103026
+mem_heap_B=6634
+mem_heap_extra_B=766
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=4160385
+mem_heap_B=5074
+mem_heap_extra_B=750
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=4161606
+mem_heap_B=3581
+mem_heap_extra_B=299
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=4161646
+mem_heap_B=3527
+mem_heap_extra_B=281
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=4161678
+mem_heap_B=3502
+mem_heap_extra_B=266
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=4161718
+mem_heap_B=3448
+mem_heap_extra_B=248
+mem_stacks_B=0
+heap_tree=detailed
+n7: 3448 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 1728 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC00013E5BF: ???
+                  n1: 1202 0xC00013E57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n0: 1202 0x1: ???
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC00013E5BF: ???
+                n1: 192 0xC00013E57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n0: 192 0x1: ???
+ n1: 108 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 108 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 108 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 108 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 108 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 108 0xC00013E5BF: ???
+       n1: 108 0xC00013E57F: ???
+        n1: 108 0xFFFFFFFFFFFFFFFE: ???
+         n0: 108 0x1: ???
+ n0: 94 in 20 places, all below massif's threshold (1.00%)
+ n1: 68 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 68 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 68 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 68 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 68 0xC00013E5BF: ???
+      n1: 68 0xC00013E57F: ???
+       n1: 68 0xFFFFFFFFFFFFFFFE: ???
+        n0: 68 0x1: ???
+ n1: 56 0x400F870: _dl_map_object_deps (in /usr/lib/ld-2.32.so)
+  n1: 56 0x4015439: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 56 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 56 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 56 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 56 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 56 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 56 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 56 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 56 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 56 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 56 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 56 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 56 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 56 0xC00013E5BF: ???
+                n1: 56 0xC00013E57F: ???
+                 n1: 56 0xFFFFFFFFFFFFFFFE: ???
+                  n0: 56 0x1: ???
+#-----------
+snapshot=53
+#-----------
+time=4161750
+mem_heap_B=3425
+mem_heap_extra_B=231
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=4161790
+mem_heap_B=3371
+mem_heap_extra_B=213
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=4161822
+mem_heap_B=3351
+mem_heap_extra_B=193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=4161862
+mem_heap_B=3297
+mem_heap_extra_B=175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=4161894
+mem_heap_B=3272
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=4163320
+mem_heap_B=3080
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=4163349
+mem_heap_B=3053
+mem_heap_extra_B=139
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=4163393
+mem_heap_B=3026
+mem_heap_extra_B=126
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=4163430
+mem_heap_B=2970
+mem_heap_extra_B=110
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=4163502
+mem_heap_B=1768
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1768 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 1728 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 24 0x49B5ADD: nss_load_library (in /usr/lib/libc-2.32.so)
+  n1: 24 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+   n1: 24 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 24 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 24 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 24 0xC00013E5BF: ???
+       n1: 24 0xC00013E57F: ???
+        n1: 24 0xFFFFFFFFFFFFFFFE: ???
+         n0: 24 0x1: ???
+ n0: 16 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=4163683
+mem_heap_B=1744
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=4163717
+mem_heap_B=1728
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty

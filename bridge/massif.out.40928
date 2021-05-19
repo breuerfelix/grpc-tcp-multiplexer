@@ -1,0 +1,1369 @@
+desc: (none)
+cmd: go run .
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=332015
+mem_heap_B=56
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=337573
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=1099272
+mem_heap_B=24
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1114577
+mem_heap_B=600
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1126250
+mem_heap_B=888
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1148420
+mem_heap_B=1176
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1169814
+mem_heap_B=1200
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1181462
+mem_heap_B=1464
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1205214
+mem_heap_B=1776
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1678287
+mem_heap_B=1776
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1776 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /usr/lib/go/bin/go)
+    n3: 1728 0x7FFFFF: cmd/vendor/golang.org/x/mod/modfile.(*input).parseLine (/usr/lib/go/src/cmd/vendor/golang.org/x/mod/modfile/read.go:886)
+     n3: 864 0xA839EF: ??? (in /usr/lib/go/bin/go)
+      n1: 288 0xC0000387FF: ???
+       n1: 288 0x2: ???
+        n1: 288 0x2: ???
+         n1: 288 0xC0000387FF: ???
+          n1: 288 0xC00004EFDF: ???
+           n1: 288 0x1FFEFFFB2F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x465596: runtime.newproc.func1 (/usr/lib/go/src/runtime/proc.go:3561)
+              n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+               n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+                n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 288 0xC00003AFFF: ???
+       n1: 288 0x4: ???
+        n1: 288 0x4: ???
+         n1: 288 0xC00003AFFF: ???
+          n1: 288 0x4FFFFFFFF: ???
+           n1: 288 0x2CAC0D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2CAC163F: ???
+      n1: 288 0xC00003D7FF: ???
+       n1: 288 0x5: ???
+        n1: 288 0x5: ???
+         n1: 288 0xC00003D7FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x2DB02D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2DB0363F: ???
+     n1: 288 0x43E548: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+      n1: 288 0x43E731: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2007)
+       n1: 288 0x43EBB6: runtime.stoplockedm (/usr/lib/go/src/runtime/proc.go:2081)
+        n1: 288 0x4409AB: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2617)
+         n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+          n1: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+           n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n1: 288 0x464D3E: runtime.main.func1 (/usr/lib/go/src/runtime/proc.go:135)
+      n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+        n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n2: 48 0x40197D: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+  n2: 24 0x43DEFA: runtime.newm (/usr/lib/go/src/runtime/proc.go:1822)
+   n2: 24 0x43E548: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+    n2: 24 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+     n1: 24 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+      n1: 24 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+       n1: 24 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+        n1: 24 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+         n0: 24 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 24 0xC00004E6F7: ???
+   n1: 24 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n1: 24 0x1FFEFFFB6F: ???
+     n1: 24 0x4654D0: runtime.malg.func1 (/usr/lib/go/src/runtime/proc.go:3524)
+      n1: 24 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 24 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+        n0: 24 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=1678287
+mem_heap_B=1752
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=3223397
+mem_heap_B=1728
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=3267245
+mem_heap_B=2336
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=3286158
+mem_heap_B=2514
+mem_heap_extra_B=182
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=3308296
+mem_heap_B=2676
+mem_heap_extra_B=276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=3322488
+mem_heap_B=2834
+mem_heap_extra_B=374
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=3335367
+mem_heap_B=2897
+mem_heap_extra_B=407
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=3354563
+mem_heap_B=3054
+mem_heap_extra_B=506
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=3368612
+mem_heap_B=3171
+mem_heap_extra_B=597
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3171 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1728 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 1728 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 1728 0x401410: _cgo_try_pthread_create (in /usr/lib/go/bin/go)
+    n3: 1728 0x7FFFFF: cmd/vendor/golang.org/x/mod/modfile.(*input).parseLine (/usr/lib/go/src/cmd/vendor/golang.org/x/mod/modfile/read.go:886)
+     n3: 864 0xA839EF: ??? (in /usr/lib/go/bin/go)
+      n1: 288 0xC0000387FF: ???
+       n1: 288 0x2: ???
+        n1: 288 0x2: ???
+         n1: 288 0xC0000387FF: ???
+          n1: 288 0xC00004EFDF: ???
+           n1: 288 0x1FFEFFFB2F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x465596: runtime.newproc.func1 (/usr/lib/go/src/runtime/proc.go:3561)
+              n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+               n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+                n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 288 0xC00003AFFF: ???
+       n1: 288 0x4: ???
+        n1: 288 0x4: ???
+         n1: 288 0xC00003AFFF: ???
+          n1: 288 0x4FFFFFFFF: ???
+           n1: 288 0x2CAC0D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2CAC163F: ???
+      n1: 288 0xC00003D7FF: ???
+       n1: 288 0x5: ???
+        n1: 288 0x5: ???
+         n1: 288 0xC00003D7FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x2DB02D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2DB0363F: ???
+     n1: 288 0x43E548: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+      n1: 288 0x43E731: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2007)
+       n1: 288 0x43EBB6: runtime.stoplockedm (/usr/lib/go/src/runtime/proc.go:2081)
+        n1: 288 0x4409AB: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2617)
+         n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+          n1: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+           n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n1: 288 0x464D3E: runtime.main.func1 (/usr/lib/go/src/runtime/proc.go:135)
+      n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+        n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 728 0x48D270B: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 728 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n1: 728 0xE057E7: ???
+    n1: 728 0x2D2D6C67: ???
+     n1: 728 0x3F: ???
+      n1: 728 0xE05837: ???
+       n1: 728 0x2D2D4A3F: ???
+        n1: 728 0x307: ???
+         n1: 728 0xC00000017F: ???
+          n1: 728 0x1C54C: ???
+           n1: 728 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 728 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 360 0x498F3E7: tsearch (in /usr/lib/libc-2.32.so)
+  n1: 360 0x48D28CD: __add_to_environ (in /usr/lib/libc-2.32.so)
+   n1: 360 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n1: 360 0xE057E7: ???
+     n1: 360 0x2D2D6C67: ???
+      n1: 360 0x3F: ???
+       n1: 360 0xE05837: ???
+        n1: 360 0x2D2D4A3F: ???
+         n1: 360 0x307: ???
+          n1: 360 0xC00000017F: ???
+           n1: 360 0x1C54C: ???
+            n1: 360 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+             n0: 360 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 331 0x48D289A: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 331 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n1: 331 0xE057E7: ???
+    n1: 331 0x2D2D6C67: ???
+     n1: 331 0x3F: ???
+      n1: 331 0xE05837: ???
+       n1: 331 0x2D2D4A3F: ???
+        n1: 331 0x307: ???
+         n1: 331 0xC00000017F: ???
+          n1: 331 0x1C54C: ???
+           n1: 331 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 331 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 24 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=3779330
+mem_heap_B=3179
+mem_heap_extra_B=589
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=3787353
+mem_heap_B=3297
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=5720621
+mem_heap_B=3321
+mem_heap_extra_B=679
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=5743596
+mem_heap_B=3897
+mem_heap_extra_B=695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=6517371
+mem_heap_B=3897
+mem_heap_extra_B=695
+mem_stacks_B=0
+heap_tree=detailed
+n5: 3897 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2304 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 2304 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 2304 0x401410: _cgo_try_pthread_create (in /usr/lib/go/bin/go)
+    n3: 2304 0x7FFFFF: cmd/vendor/golang.org/x/mod/modfile.(*input).parseLine (/usr/lib/go/src/cmd/vendor/golang.org/x/mod/modfile/read.go:886)
+     n5: 1440 0xA839EF: ??? (in /usr/lib/go/bin/go)
+      n1: 288 0xC0000387FF: ???
+       n1: 288 0x2: ???
+        n1: 288 0x2: ???
+         n1: 288 0xC0000387FF: ???
+          n1: 288 0xC00004EFDF: ???
+           n1: 288 0x1FFEFFFB2F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x465596: runtime.newproc.func1 (/usr/lib/go/src/runtime/proc.go:3561)
+              n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+               n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+                n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 288 0xC00003AFFF: ???
+       n1: 288 0x4: ???
+        n1: 288 0x4: ???
+         n1: 288 0xC00003AFFF: ???
+          n1: 288 0x4FFFFFFFF: ???
+           n1: 288 0x2CAC0D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2CAC163F: ???
+      n1: 288 0xC00003D7FF: ???
+       n1: 288 0x5: ???
+        n1: 288 0x5: ???
+         n1: 288 0xC00003D7FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x2DB02D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2DB0363F: ???
+      n1: 288 0xC0000427FF: ???
+       n1: 288 0x7: ???
+        n1: 288 0x7: ???
+         n1: 288 0xC0000427FF: ???
+          n1: 288 0x500000001: ???
+           n1: 288 0x2DB02D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+      n1: 288 0xC000044FFF: ???
+       n1: 288 0x8: ???
+        n1: 288 0x8: ???
+         n1: 288 0xC000044FFF: ???
+          n1: 288 0x300000002: ???
+           n1: 288 0x2F305D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2F30663F: ???
+     n1: 288 0x43E548: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+      n1: 288 0x43E731: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2007)
+       n1: 288 0x43EBB6: runtime.stoplockedm (/usr/lib/go/src/runtime/proc.go:2081)
+        n1: 288 0x4409AB: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2617)
+         n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+          n1: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+           n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n1: 288 0x464D3E: runtime.main.func1 (/usr/lib/go/src/runtime/proc.go:135)
+      n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+        n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 744 0x48D270B: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 744 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 744 0xE057E7: ???
+    n1: 744 0x2D2D6ACF: ???
+     n1: 744 0x3F: ???
+      n1: 744 0xE05837: ???
+       n1: 744 0x2D2DBABF: ???
+        n1: 744 0x617: ???
+         n1: 744 0xC00000017F: ???
+          n1: 744 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+           n1: 744 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 744 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 408 0x498F3E7: tsearch (in /usr/lib/libc-2.32.so)
+  n1: 408 0x48D28CD: __add_to_environ (in /usr/lib/libc-2.32.so)
+   n1: 408 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n2: 408 0xE057E7: ???
+     n1: 360 0x2D2D6C67: ???
+      n1: 360 0x3F: ???
+       n1: 360 0xE05837: ???
+        n1: 360 0x2D2D4A3F: ???
+         n1: 360 0x307: ???
+          n1: 360 0xC00000017F: ???
+           n1: 360 0x1C54C: ???
+            n1: 360 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+             n0: 360 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n1: 48 0x2D2D6ACF: ???
+      n1: 48 0x3F: ???
+       n1: 48 0xE05837: ???
+        n1: 48 0x2D2DBABF: ???
+         n1: 48 0x617: ???
+          n1: 48 0xC00000017F: ???
+           n1: 48 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+            n1: 48 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+             n0: 48 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 393 0x48D289A: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 393 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 393 0xE057E7: ???
+    n1: 331 0x2D2D6C67: ???
+     n1: 331 0x3F: ???
+      n1: 331 0xE05837: ???
+       n1: 331 0x2D2D4A3F: ???
+        n1: 331 0x307: ???
+         n1: 331 0xC00000017F: ???
+          n1: 331 0x1C54C: ???
+           n1: 331 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 331 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n1: 62 0x2D2D6ACF: ???
+     n1: 62 0x3F: ???
+      n1: 62 0xE05837: ???
+       n1: 62 0x2D2DBABF: ???
+        n1: 62 0x617: ???
+         n1: 62 0xC00000017F: ???
+          n1: 62 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+           n1: 62 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 62 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 48 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=6517371
+mem_heap_B=3873
+mem_heap_extra_B=679
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=9887894
+mem_heap_B=3897
+mem_heap_extra_B=695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=9888806
+mem_heap_B=4161
+mem_heap_extra_B=687
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=10576593
+mem_heap_B=4185
+mem_heap_extra_B=703
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=10576969
+mem_heap_B=4473
+mem_heap_extra_B=711
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=11610955
+mem_heap_B=4497
+mem_heap_extra_B=727
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=11611331
+mem_heap_B=4785
+mem_heap_extra_B=735
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=11852581
+mem_heap_B=4785
+mem_heap_extra_B=735
+mem_stacks_B=0
+heap_tree=detailed
+n5: 4785 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3168 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 3168 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 3168 0x401410: _cgo_try_pthread_create (in /usr/lib/go/bin/go)
+    n3: 3168 0x7FFFFF: cmd/vendor/golang.org/x/mod/modfile.(*input).parseLine (/usr/lib/go/src/cmd/vendor/golang.org/x/mod/modfile/read.go:886)
+     n6: 1728 0xA839EF: ??? (in /usr/lib/go/bin/go)
+      n1: 288 0xC000035FFF: ???
+       n1: 288 0xA: ???
+        n1: 288 0xA: ???
+         n1: 288 0xC000035FFF: ???
+          n1: 288 0x700000001: ???
+           n1: 288 0x2F305D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+      n1: 288 0xC0000387FF: ???
+       n1: 288 0x2: ???
+        n1: 288 0x2: ???
+         n1: 288 0xC0000387FF: ???
+          n1: 288 0xC00004EFDF: ???
+           n1: 288 0x1FFEFFFB2F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x465596: runtime.newproc.func1 (/usr/lib/go/src/runtime/proc.go:3561)
+              n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+               n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+                n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 288 0xC00003AFFF: ???
+       n1: 288 0x4: ???
+        n1: 288 0x4: ???
+         n1: 288 0xC00003AFFF: ???
+          n1: 288 0x4FFFFFFFF: ???
+           n1: 288 0x2CAC0D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2CAC163F: ???
+      n1: 288 0xC00003D7FF: ???
+       n1: 288 0x5: ???
+        n1: 288 0x5: ???
+         n1: 288 0xC00003D7FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x2DB02D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2DB0363F: ???
+      n1: 288 0xC0000427FF: ???
+       n1: 288 0x7: ???
+        n1: 288 0x7: ???
+         n1: 288 0xC0000427FF: ???
+          n1: 288 0x500000001: ???
+           n1: 288 0x2DB02D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+      n1: 288 0xC000044FFF: ???
+       n1: 288 0x8: ???
+        n1: 288 0x8: ???
+         n1: 288 0xC000044FFF: ???
+          n1: 288 0x300000002: ???
+           n1: 288 0x2F305D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2F30663F: ???
+     n1: 864 0x43E548: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+      n2: 864 0x43E731: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2007)
+       n1: 576 0x445927: runtime.retake (/usr/lib/go/src/runtime/proc.go:4832)
+        n1: 576 0x4453D0: runtime.sysmon (/usr/lib/go/src/runtime/proc.go:4740)
+         n1: 576 0x43CDC7: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1172)
+          n1: 576 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+           n1: 576 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+            n0: 576 0x2C2C063F: ???
+       n1: 288 0x43EBB6: runtime.stoplockedm (/usr/lib/go/src/runtime/proc.go:2081)
+        n1: 288 0x4409AB: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2617)
+         n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+          n1: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+           n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n1: 288 0x464D3E: runtime.main.func1 (/usr/lib/go/src/runtime/proc.go:135)
+      n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+        n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 744 0x48D270B: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 744 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 744 0xE057E7: ???
+    n1: 744 0x2D2D6ACF: ???
+     n1: 744 0x3F: ???
+      n1: 744 0xE05837: ???
+       n1: 744 0x2D2DBABF: ???
+        n1: 744 0x617: ???
+         n1: 744 0xC00000017F: ???
+          n1: 744 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+           n1: 744 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 744 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 408 0x498F3E7: tsearch (in /usr/lib/libc-2.32.so)
+  n1: 408 0x48D28CD: __add_to_environ (in /usr/lib/libc-2.32.so)
+   n1: 408 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n2: 408 0xE057E7: ???
+     n1: 360 0x2D2D6C67: ???
+      n1: 360 0x3F: ???
+       n1: 360 0xE05837: ???
+        n1: 360 0x2D2D4A3F: ???
+         n1: 360 0x307: ???
+          n1: 360 0xC00000017F: ???
+           n1: 360 0x1C54C: ???
+            n1: 360 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+             n0: 360 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n0: 48 in 1 place, below massif's threshold (1.00%)
+ n1: 393 0x48D289A: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 393 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 393 0xE057E7: ???
+    n1: 331 0x2D2D6C67: ???
+     n1: 331 0x3F: ???
+      n1: 331 0xE05837: ???
+       n1: 331 0x2D2D4A3F: ???
+        n1: 331 0x307: ???
+         n1: 331 0xC00000017F: ???
+          n1: 331 0x1C54C: ???
+           n1: 331 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 331 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n1: 62 0x2D2D6ACF: ???
+     n1: 62 0x3F: ???
+      n1: 62 0xE05837: ???
+       n1: 62 0x2D2DBABF: ???
+        n1: 62 0x617: ???
+         n1: 62 0xC00000017F: ???
+          n1: 62 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+           n1: 62 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 62 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 72 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=11852581
+mem_heap_B=4761
+mem_heap_extra_B=719
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=11970632
+mem_heap_B=4737
+mem_heap_extra_B=703
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=12428347
+mem_heap_B=4761
+mem_heap_extra_B=719
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=12428723
+mem_heap_B=5049
+mem_heap_extra_B=727
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=12516495
+mem_heap_B=5049
+mem_heap_extra_B=727
+mem_stacks_B=0
+heap_tree=detailed
+n5: 5049 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3456 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 3456 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 3456 0x401410: _cgo_try_pthread_create (in /usr/lib/go/bin/go)
+    n3: 3456 0x7FFFFF: cmd/vendor/golang.org/x/mod/modfile.(*input).parseLine (/usr/lib/go/src/cmd/vendor/golang.org/x/mod/modfile/read.go:886)
+     n6: 1728 0xA839EF: ??? (in /usr/lib/go/bin/go)
+      n1: 288 0xC000035FFF: ???
+       n1: 288 0xA: ???
+        n1: 288 0xA: ???
+         n1: 288 0xC000035FFF: ???
+          n1: 288 0x700000001: ???
+           n1: 288 0x2F305D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+      n1: 288 0xC0000387FF: ???
+       n1: 288 0x2: ???
+        n1: 288 0x2: ???
+         n1: 288 0xC0000387FF: ???
+          n1: 288 0xC00004EFDF: ???
+           n1: 288 0x1FFEFFFB2F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x465596: runtime.newproc.func1 (/usr/lib/go/src/runtime/proc.go:3561)
+              n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+               n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+                n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 288 0xC00003AFFF: ???
+       n1: 288 0x4: ???
+        n1: 288 0x4: ???
+         n1: 288 0xC00003AFFF: ???
+          n1: 288 0x4FFFFFFFF: ???
+           n1: 288 0x2CAC0D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2CAC163F: ???
+      n1: 288 0xC00003D7FF: ???
+       n1: 288 0x5: ???
+        n1: 288 0x5: ???
+         n1: 288 0xC00003D7FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x2DB02D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2DB0363F: ???
+      n1: 288 0xC0000427FF: ???
+       n1: 288 0x7: ???
+        n1: 288 0x7: ???
+         n1: 288 0xC0000427FF: ???
+          n1: 288 0x500000001: ???
+           n1: 288 0x2DB02D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+      n1: 288 0xC000044FFF: ???
+       n1: 288 0x8: ???
+        n1: 288 0x8: ???
+         n1: 288 0xC000044FFF: ???
+          n1: 288 0x300000002: ???
+           n1: 288 0x2F305D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2F30663F: ???
+     n2: 1152 0x43E548: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+      n2: 864 0x43E731: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2007)
+       n1: 576 0x445927: runtime.retake (/usr/lib/go/src/runtime/proc.go:4832)
+        n1: 576 0x4453D0: runtime.sysmon (/usr/lib/go/src/runtime/proc.go:4740)
+         n1: 576 0x43CDC7: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1172)
+          n1: 576 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+           n1: 576 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+            n0: 576 0x2C2C063F: ???
+       n1: 288 0x43EBB6: runtime.stoplockedm (/usr/lib/go/src/runtime/proc.go:2081)
+        n1: 288 0x4409AB: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2617)
+         n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+          n1: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+           n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 288 0x43E9BB: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2018)
+       n1: 288 0x445927: runtime.retake (/usr/lib/go/src/runtime/proc.go:4832)
+        n1: 288 0x4453D0: runtime.sysmon (/usr/lib/go/src/runtime/proc.go:4740)
+         n1: 288 0x43CDC7: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1172)
+          n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+           n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+            n0: 288 0x2C2C063F: ???
+     n1: 288 0x464D3E: runtime.main.func1 (/usr/lib/go/src/runtime/proc.go:135)
+      n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+        n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 744 0x48D270B: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 744 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 744 0xE057E7: ???
+    n1: 744 0x2D2D6ACF: ???
+     n1: 744 0x3F: ???
+      n1: 744 0xE05837: ???
+       n1: 744 0x2D2DBABF: ???
+        n1: 744 0x617: ???
+         n1: 744 0xC00000017F: ???
+          n1: 744 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+           n1: 744 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 744 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 408 0x498F3E7: tsearch (in /usr/lib/libc-2.32.so)
+  n1: 408 0x48D28CD: __add_to_environ (in /usr/lib/libc-2.32.so)
+   n1: 408 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n2: 408 0xE057E7: ???
+     n1: 360 0x2D2D6C67: ???
+      n1: 360 0x3F: ???
+       n1: 360 0xE05837: ???
+        n1: 360 0x2D2D4A3F: ???
+         n1: 360 0x307: ???
+          n1: 360 0xC00000017F: ???
+           n1: 360 0x1C54C: ???
+            n1: 360 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+             n0: 360 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n0: 48 in 1 place, below massif's threshold (1.00%)
+ n1: 393 0x48D289A: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 393 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 393 0xE057E7: ???
+    n1: 331 0x2D2D6C67: ???
+     n1: 331 0x3F: ???
+      n1: 331 0xE05837: ???
+       n1: 331 0x2D2D4A3F: ???
+        n1: 331 0x307: ???
+         n1: 331 0xC00000017F: ???
+          n1: 331 0x1C54C: ???
+           n1: 331 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 331 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n1: 62 0x2D2D6ACF: ???
+     n1: 62 0x3F: ???
+      n1: 62 0xE05837: ???
+       n1: 62 0x2D2DBABF: ???
+        n1: 62 0x617: ???
+         n1: 62 0xC00000017F: ???
+          n1: 62 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+           n1: 62 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 62 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 48 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=12516495
+mem_heap_B=5025
+mem_heap_extra_B=711
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=30093667
+mem_heap_B=5049
+mem_heap_extra_B=727
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=30094579
+mem_heap_B=5313
+mem_heap_extra_B=719
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=55519253
+mem_heap_B=5337
+mem_heap_extra_B=735
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=55520165
+mem_heap_B=5601
+mem_heap_extra_B=727
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=65107766
+mem_heap_B=5625
+mem_heap_extra_B=743
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=65108142
+mem_heap_B=5913
+mem_heap_extra_B=751
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=65436275
+mem_heap_B=5913
+mem_heap_extra_B=751
+mem_stacks_B=0
+heap_tree=detailed
+n5: 5913 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4320 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 4320 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 4320 0x401410: _cgo_try_pthread_create (in /usr/lib/go/bin/go)
+    n3: 4320 0x7FFFFF: cmd/vendor/golang.org/x/mod/modfile.(*input).parseLine (/usr/lib/go/src/cmd/vendor/golang.org/x/mod/modfile/read.go:886)
+     n6: 2016 0xA839EF: ??? (in /usr/lib/go/bin/go)
+      n2: 576 0xC0000427FF: ???
+       n1: 288 0x7: ???
+        n1: 288 0x7: ???
+         n1: 288 0xC0000427FF: ???
+          n1: 288 0x500000001: ???
+           n1: 288 0x2DB02D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+       n1: 288 0xF: ???
+        n1: 288 0xF: ???
+         n1: 288 0xC0000427FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x32E4CD1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x32E4D63F: ???
+      n1: 288 0xC000035FFF: ???
+       n1: 288 0xA: ???
+        n1: 288 0xA: ???
+         n1: 288 0xC000035FFF: ???
+          n1: 288 0x700000001: ???
+           n1: 288 0x2F305D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+      n1: 288 0xC0000387FF: ???
+       n1: 288 0x2: ???
+        n1: 288 0x2: ???
+         n1: 288 0xC0000387FF: ???
+          n1: 288 0xC00004EFDF: ???
+           n1: 288 0x1FFEFFFB2F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x465596: runtime.newproc.func1 (/usr/lib/go/src/runtime/proc.go:3561)
+              n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+               n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+                n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 288 0xC00003AFFF: ???
+       n1: 288 0x4: ???
+        n1: 288 0x4: ???
+         n1: 288 0xC00003AFFF: ???
+          n1: 288 0x4FFFFFFFF: ???
+           n1: 288 0x2CAC0D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2CAC163F: ???
+      n1: 288 0xC00003D7FF: ???
+       n1: 288 0x5: ???
+        n1: 288 0x5: ???
+         n1: 288 0xC00003D7FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x2DB02D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2DB0363F: ???
+      n1: 288 0xC000044FFF: ???
+       n1: 288 0x8: ???
+        n1: 288 0x8: ???
+         n1: 288 0xC000044FFF: ???
+          n1: 288 0x300000002: ???
+           n1: 288 0x2F305D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2F30663F: ???
+     n2: 1728 0x43E548: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+      n2: 864 0x43E731: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2007)
+       n1: 576 0x445927: runtime.retake (/usr/lib/go/src/runtime/proc.go:4832)
+        n1: 576 0x4453D0: runtime.sysmon (/usr/lib/go/src/runtime/proc.go:4740)
+         n1: 576 0x43CDC7: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1172)
+          n1: 576 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+           n1: 576 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+            n0: 576 0x2C2C063F: ???
+       n1: 288 0x43EBB6: runtime.stoplockedm (/usr/lib/go/src/runtime/proc.go:2081)
+        n1: 288 0x4409AB: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2617)
+         n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+          n1: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+           n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 864 0x43E9BB: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2018)
+       n1: 864 0x445927: runtime.retake (/usr/lib/go/src/runtime/proc.go:4832)
+        n1: 864 0x4453D0: runtime.sysmon (/usr/lib/go/src/runtime/proc.go:4740)
+         n1: 864 0x43CDC7: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1172)
+          n1: 864 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+           n1: 864 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+            n0: 864 0x2C2C063F: ???
+     n1: 288 0x464D3E: runtime.main.func1 (/usr/lib/go/src/runtime/proc.go:135)
+      n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+        n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 744 0x48D270B: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 744 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 744 0xE057E7: ???
+    n1: 744 0x2D2D6ACF: ???
+     n1: 744 0x3F: ???
+      n1: 744 0xE05837: ???
+       n1: 744 0x2D2DBABF: ???
+        n1: 744 0x617: ???
+         n1: 744 0xC00000017F: ???
+          n1: 744 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+           n1: 744 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 744 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 408 0x498F3E7: tsearch (in /usr/lib/libc-2.32.so)
+  n1: 408 0x48D28CD: __add_to_environ (in /usr/lib/libc-2.32.so)
+   n1: 408 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n2: 408 0xE057E7: ???
+     n1: 360 0x2D2D6C67: ???
+      n1: 360 0x3F: ???
+       n1: 360 0xE05837: ???
+        n1: 360 0x2D2D4A3F: ???
+         n1: 360 0x307: ???
+          n1: 360 0xC00000017F: ???
+           n1: 360 0x1C54C: ???
+            n1: 360 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+             n0: 360 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n0: 48 in 1 place, below massif's threshold (1.00%)
+ n1: 393 0x48D289A: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 393 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 393 0xE057E7: ???
+    n1: 331 0x2D2D6C67: ???
+     n1: 331 0x3F: ???
+      n1: 331 0xE05837: ???
+       n1: 331 0x2D2D4A3F: ???
+        n1: 331 0x307: ???
+         n1: 331 0xC00000017F: ???
+          n1: 331 0x1C54C: ???
+           n1: 331 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 331 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n0: 62 in 1 place, below massif's threshold (1.00%)
+ n0: 48 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=65444127
+mem_heap_B=6201
+mem_heap_extra_B=759
+mem_stacks_B=0
+heap_tree=peak
+n5: 6201 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4608 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 4608 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 4608 0x401410: _cgo_try_pthread_create (in /usr/lib/go/bin/go)
+    n3: 4608 0x7FFFFF: cmd/vendor/golang.org/x/mod/modfile.(*input).parseLine (/usr/lib/go/src/cmd/vendor/golang.org/x/mod/modfile/read.go:886)
+     n7: 2304 0xA839EF: ??? (in /usr/lib/go/bin/go)
+      n2: 576 0xC0000427FF: ???
+       n1: 288 0x7: ???
+        n1: 288 0x7: ???
+         n1: 288 0xC0000427FF: ???
+          n1: 288 0x500000001: ???
+           n1: 288 0x2DB02D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+       n1: 288 0xF: ???
+        n1: 288 0xF: ???
+         n1: 288 0xC0000427FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x32E4CD1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x32E4D63F: ???
+      n1: 288 0xC000035FFF: ???
+       n1: 288 0xA: ???
+        n1: 288 0xA: ???
+         n1: 288 0xC000035FFF: ???
+          n1: 288 0x700000001: ???
+           n1: 288 0x2F305D0F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                n0: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+      n1: 288 0xC0000387FF: ???
+       n1: 288 0x2: ???
+        n1: 288 0x2: ???
+         n1: 288 0xC0000387FF: ???
+          n1: 288 0xC00004EFDF: ???
+           n1: 288 0x1FFEFFFB2F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x465596: runtime.newproc.func1 (/usr/lib/go/src/runtime/proc.go:3561)
+              n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+               n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+                n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 288 0xC00003AFFF: ???
+       n1: 288 0x4: ???
+        n1: 288 0x4: ???
+         n1: 288 0xC00003AFFF: ???
+          n1: 288 0x4FFFFFFFF: ???
+           n1: 288 0x2CAC0D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2CAC163F: ???
+      n1: 288 0xC00003D7FF: ???
+       n1: 288 0x5: ???
+        n1: 288 0x5: ???
+         n1: 288 0xC00003D7FF: ???
+          n1: 288 0x6FFFFFFFF: ???
+           n1: 288 0x2DB02D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2DB0363F: ???
+      n1: 288 0xC000044FFF: ???
+       n1: 288 0x8: ???
+        n1: 288 0x8: ???
+         n1: 288 0xC000044FFF: ???
+          n1: 288 0x300000002: ???
+           n1: 288 0x2F305D1F: ???
+            n1: 288 0x43EA85: runtime.wakep (/usr/lib/go/src/runtime/proc.go:2067)
+             n1: 288 0x4401F8: runtime.resetspinning (/usr/lib/go/src/runtime/proc.go:2539)
+              n1: 288 0x4407D8: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2690)
+               n1: 288 0x43CD92: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1179)
+                n1: 288 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+                 n1: 288 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+                  n0: 288 0x2F30663F: ???
+      n1: 288 0xC0000477FF: ???
+       n1: 288 0x10: ???
+        n1: 288 0x10: ???
+         n0: 288 0xC0000477FF: ???
+     n2: 1728 0x43E548: runtime.startm (/usr/lib/go/src/runtime/proc.go:1979)
+      n2: 864 0x43E731: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2007)
+       n1: 576 0x445927: runtime.retake (/usr/lib/go/src/runtime/proc.go:4832)
+        n1: 576 0x4453D0: runtime.sysmon (/usr/lib/go/src/runtime/proc.go:4740)
+         n1: 576 0x43CDC7: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1172)
+          n1: 576 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+           n1: 576 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+            n0: 576 0x2C2C063F: ???
+       n1: 288 0x43EBB6: runtime.stoplockedm (/usr/lib/go/src/runtime/proc.go:2081)
+        n1: 288 0x4409AB: runtime.schedule (/usr/lib/go/src/runtime/proc.go:2617)
+         n1: 288 0x440D9C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+          n1: 288 0x46ADDA: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+           n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+      n1: 864 0x43E9BB: runtime.handoffp (/usr/lib/go/src/runtime/proc.go:2018)
+       n1: 864 0x445927: runtime.retake (/usr/lib/go/src/runtime/proc.go:4832)
+        n1: 864 0x4453D0: runtime.sysmon (/usr/lib/go/src/runtime/proc.go:4740)
+         n1: 864 0x43CDC7: runtime.mstart1 (/usr/lib/go/src/runtime/proc.go:1172)
+          n1: 864 0x43CCCD: runtime.mstart (/usr/lib/go/src/runtime/proc.go:1137)
+           n1: 864 0x4019CB: runtime/cgo(.text) (in /usr/lib/go/bin/go)
+            n0: 864 0x2C2C063F: ???
+     n1: 288 0x464D3E: runtime.main.func1 (/usr/lib/go/src/runtime/proc.go:135)
+      n1: 288 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 288 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+        n0: 288 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 744 0x48D270B: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 744 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 744 0xE057E7: ???
+    n1: 744 0x2D2D6ACF: ???
+     n1: 744 0x3F: ???
+      n1: 744 0xE05837: ???
+       n1: 744 0x2D2DBABF: ???
+        n1: 744 0x617: ???
+         n1: 744 0xC00000017F: ???
+          n1: 744 0x46AE85: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+           n1: 744 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 744 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 408 0x498F3E7: tsearch (in /usr/lib/libc-2.32.so)
+  n1: 408 0x48D28CD: __add_to_environ (in /usr/lib/libc-2.32.so)
+   n1: 408 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n2: 408 0xE057E7: ???
+     n1: 360 0x2D2D6C67: ???
+      n1: 360 0x3F: ???
+       n1: 360 0xE05837: ???
+        n1: 360 0x2D2D4A3F: ???
+         n1: 360 0x307: ???
+          n1: 360 0xC00000017F: ???
+           n1: 360 0x1C54C: ???
+            n1: 360 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+             n0: 360 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+     n0: 48 in 1 place, below massif's threshold (1.00%)
+ n1: 393 0x48D289A: __add_to_environ (in /usr/lib/libc-2.32.so)
+  n1: 393 0x46C7EF: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+   n2: 393 0xE057E7: ???
+    n1: 331 0x2D2D6C67: ???
+     n1: 331 0x3F: ???
+      n1: 331 0xE05837: ???
+       n1: 331 0x2D2D4A3F: ???
+        n1: 331 0x307: ???
+         n1: 331 0xC00000017F: ???
+          n1: 331 0x1C54C: ???
+           n1: 331 0x43CC5F: ??? (in /usr/lib/go/bin/go)
+            n0: 331 0x46ACD3: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+    n0: 62 in 1 place, below massif's threshold (1.00%)
+ n0: 48 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=65444127
+mem_heap_B=6177
+mem_heap_extra_B=743
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1790217763
+mem_heap_B=5433
+mem_heap_extra_B=727
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1790218864
+mem_heap_B=4795
+mem_heap_extra_B=253
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1790218896
+mem_heap_B=4771
+mem_heap_extra_B=237
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1790218924
+mem_heap_B=4731
+mem_heap_extra_B=221
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1790218956
+mem_heap_B=4707
+mem_heap_extra_B=205
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1790218984
+mem_heap_B=4673
+mem_heap_extra_B=183
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1790219016
+mem_heap_B=4649
+mem_heap_extra_B=167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1790219044
+mem_heap_B=4632
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1790219076
+mem_heap_B=4608
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty

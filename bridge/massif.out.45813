@@ -1,0 +1,1034 @@
+desc: (none)
+cmd: ./bridge
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=332024
+mem_heap_B=56
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=337582
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=1074151
+mem_heap_B=24
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1145172
+mem_heap_B=1464
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1216516
+mem_heap_B=2040
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=3744984
+mem_heap_B=2040
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2040 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2016 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 2016 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 2016 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 2016 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n2: 24 0x40197D: runtime/cgo(.text) (in /home/felix/inovex/thesis/bridge/bridge)
+  n1: 24 0xC00004E6F7: ???
+   n1: 24 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+    n1: 24 0x1FFEFFFB7F: ???
+     n1: 24 0x464D30: runtime.malg.func1 (/usr/lib/go/src/runtime/proc.go:3524)
+      n1: 24 0x469EC5: runtime.systemstack (/usr/lib/go/src/runtime/asm_amd64.s:370)
+       n1: 24 0x43CA1F: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+        n0: 24 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=3744984
+mem_heap_B=2016
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=3989616
+mem_heap_B=2488
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=4027603
+mem_heap_B=5402
+mem_heap_extra_B=774
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=4089803
+mem_heap_B=5874
+mem_heap_extra_B=790
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=4121624
+mem_heap_B=6922
+mem_heap_extra_B=774
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=4882581
+mem_heap_B=6946
+mem_heap_extra_B=806
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=4883493
+mem_heap_B=7210
+mem_heap_extra_B=798
+mem_stacks_B=0
+heap_tree=detailed
+n9: 7210 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2304 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 2304 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 2304 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 2304 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1560 0x49B0C2F: __check_pf (in /usr/lib/libc-2.32.so)
+  n1: 1560 0x497D880: getaddrinfo (in /usr/lib/libc-2.32.so)
+   n1: 1560 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+    n1: 1560 0xC0000CA5BF: ???
+     n1: 1560 0xC0000CA57F: ???
+      n1: 1560 0xFFFFFFFFFFFFFFFE: ???
+       n1: 1560 0x2: ???
+        n1: 1560 0x1: ???
+         n1: 1560 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+          n1: 1560 0x1FFEFFFB7F: ???
+           n1: 1560 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+            n1: 1560 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+             n0: 1560 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC0000CA5BF: ???
+                  n1: 1202 0xC0000CA57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n1: 1202 0x2: ???
+                     n1: 1202 0x1: ???
+                      n1: 1202 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                       n1: 1202 0x1FFEFFFB7F: ???
+                        n1: 1202 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                         n1: 1202 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                          n0: 1202 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC0000CA5BF: ???
+       n1: 1166 0xC0000CA57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n1: 1166 0x2: ???
+          n1: 1166 0x1: ???
+           n1: 1166 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+            n1: 1166 0x1FFEFFFB7F: ???
+             n1: 1166 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+              n1: 1166 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+               n0: 1166 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC0000CA5BF: ???
+      n1: 260 0xC0000CA57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n1: 260 0x2: ???
+         n1: 260 0x1: ???
+          n1: 260 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+           n1: 260 0x1FFEFFFB7F: ???
+            n1: 260 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+             n1: 260 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+              n0: 260 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 222 in 18 places, all below massif's threshold (1.00%)
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC0000CA5BF: ???
+            n1: 216 0xC0000CA57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n1: 216 0x2: ???
+               n1: 216 0x1: ???
+                n1: 216 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                 n1: 216 0x1FFEFFFB7F: ???
+                  n1: 216 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                   n1: 216 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                    n0: 216 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC0000CA5BF: ???
+                n1: 192 0xC0000CA57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n1: 192 0x2: ???
+                   n1: 192 0x1: ???
+                    n1: 192 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                     n1: 192 0x1FFEFFFB7F: ???
+                      n1: 192 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                       n1: 192 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                        n0: 192 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 88 0x49B43EE: get_locked_global (in /usr/lib/libc-2.32.so)
+  n1: 88 0x49B47BC: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+   n1: 88 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+    n1: 88 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+     n1: 88 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+      n1: 88 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+       n1: 88 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+        n1: 88 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+         n1: 88 0xC0000CA5BF: ???
+          n1: 88 0xC0000CA57F: ???
+           n1: 88 0xFFFFFFFFFFFFFFFE: ???
+            n1: 88 0x2: ???
+             n1: 88 0x1: ???
+              n1: 88 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+               n1: 88 0x1FFEFFFB7F: ???
+                n1: 88 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                 n1: 88 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                  n0: 88 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+#-----------
+snapshot=14
+#-----------
+time=5112854
+mem_heap_B=7234
+mem_heap_extra_B=830
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=5113766
+mem_heap_B=7498
+mem_heap_extra_B=806
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=5392384
+mem_heap_B=7522
+mem_heap_extra_B=838
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=5428083
+mem_heap_B=7786
+mem_heap_extra_B=814
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=90873026
+mem_heap_B=7810
+mem_heap_extra_B=846
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=90873938
+mem_heap_B=8074
+mem_heap_extra_B=822
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=92131007
+mem_heap_B=8098
+mem_heap_extra_B=854
+mem_stacks_B=0
+heap_tree=detailed
+n8: 8098 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3168 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 3168 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 3168 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 3168 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1560 0x49B0C2F: __check_pf (in /usr/lib/libc-2.32.so)
+  n1: 1560 0x497D880: getaddrinfo (in /usr/lib/libc-2.32.so)
+   n1: 1560 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+    n1: 1560 0xC0000CA5BF: ???
+     n1: 1560 0xC0000CA57F: ???
+      n1: 1560 0xFFFFFFFFFFFFFFFE: ???
+       n1: 1560 0x2: ???
+        n1: 1560 0x1: ???
+         n1: 1560 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+          n1: 1560 0x1FFEFFFB7F: ???
+           n1: 1560 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+            n1: 1560 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+             n0: 1560 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC0000CA5BF: ???
+                  n1: 1202 0xC0000CA57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n1: 1202 0x2: ???
+                     n1: 1202 0x1: ???
+                      n1: 1202 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                       n1: 1202 0x1FFEFFFB7F: ???
+                        n1: 1202 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                         n1: 1202 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                          n0: 1202 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC0000CA5BF: ???
+       n1: 1166 0xC0000CA57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n1: 1166 0x2: ???
+          n1: 1166 0x1: ???
+           n1: 1166 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+            n1: 1166 0x1FFEFFFB7F: ???
+             n1: 1166 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+              n1: 1166 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+               n0: 1166 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 334 in 19 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC0000CA5BF: ???
+      n1: 260 0xC0000CA57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n1: 260 0x2: ???
+         n1: 260 0x1: ???
+          n1: 260 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+           n1: 260 0x1FFEFFFB7F: ???
+            n1: 260 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+             n1: 260 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+              n0: 260 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC0000CA5BF: ???
+            n1: 216 0xC0000CA57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n1: 216 0x2: ???
+               n1: 216 0x1: ???
+                n1: 216 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                 n1: 216 0x1FFEFFFB7F: ???
+                  n1: 216 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                   n1: 216 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                    n0: 216 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC0000CA5BF: ???
+                n1: 192 0xC0000CA57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n1: 192 0x2: ???
+                   n1: 192 0x1: ???
+                    n1: 192 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                     n1: 192 0x1FFEFFFB7F: ???
+                      n1: 192 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                       n1: 192 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                        n0: 192 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+#-----------
+snapshot=21
+#-----------
+time=92198916
+mem_heap_B=8650
+mem_heap_extra_B=838
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=9657219346
+mem_heap_B=8674
+mem_heap_extra_B=870
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=9657220258
+mem_heap_B=8938
+mem_heap_extra_B=846
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=10435555594
+mem_heap_B=8962
+mem_heap_extra_B=878
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=10435646980
+mem_heap_B=9826
+mem_heap_extra_B=902
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=10435840938
+mem_heap_B=9850
+mem_heap_extra_B=918
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=10435887317
+mem_heap_B=10090
+mem_heap_extra_B=878
+mem_stacks_B=0
+heap_tree=detailed
+n8: 10090 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5184 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 5184 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 5184 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 5184 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1560 0x49B0C2F: __check_pf (in /usr/lib/libc-2.32.so)
+  n1: 1560 0x497D880: getaddrinfo (in /usr/lib/libc-2.32.so)
+   n1: 1560 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+    n1: 1560 0xC0000CA5BF: ???
+     n1: 1560 0xC0000CA57F: ???
+      n1: 1560 0xFFFFFFFFFFFFFFFE: ???
+       n1: 1560 0x2: ???
+        n1: 1560 0x1: ???
+         n1: 1560 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+          n1: 1560 0x1FFEFFFB7F: ???
+           n1: 1560 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+            n1: 1560 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+             n0: 1560 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC0000CA5BF: ???
+                  n1: 1202 0xC0000CA57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n1: 1202 0x2: ???
+                     n1: 1202 0x1: ???
+                      n1: 1202 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                       n1: 1202 0x1FFEFFFB7F: ???
+                        n1: 1202 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                         n1: 1202 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                          n0: 1202 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC0000CA5BF: ???
+       n1: 1166 0xC0000CA57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n1: 1166 0x2: ???
+          n1: 1166 0x1: ???
+           n1: 1166 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+            n1: 1166 0x1FFEFFFB7F: ???
+             n1: 1166 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+              n1: 1166 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+               n0: 1166 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 310 in 19 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC0000CA5BF: ???
+      n1: 260 0xC0000CA57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n1: 260 0x2: ???
+         n1: 260 0x1: ???
+          n1: 260 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+           n1: 260 0x1FFEFFFB7F: ???
+            n1: 260 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+             n1: 260 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+              n0: 260 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC0000CA5BF: ???
+            n1: 216 0xC0000CA57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n1: 216 0x2: ???
+               n1: 216 0x1: ???
+                n1: 216 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                 n1: 216 0x1FFEFFFB7F: ???
+                  n1: 216 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                   n1: 216 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                    n0: 216 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC0000CA5BF: ???
+                n1: 192 0xC0000CA57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n1: 192 0x2: ???
+                   n1: 192 0x1: ???
+                    n1: 192 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                     n1: 192 0x1FFEFFFB7F: ???
+                      n1: 192 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                       n1: 192 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                        n0: 192 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+#-----------
+snapshot=28
+#-----------
+time=10436443210
+mem_heap_B=10114
+mem_heap_extra_B=910
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=10436444122
+mem_heap_B=10378
+mem_heap_extra_B=886
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=10436541456
+mem_heap_B=10402
+mem_heap_extra_B=918
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=10436541832
+mem_heap_B=10690
+mem_heap_extra_B=926
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=10436974280
+mem_heap_B=10690
+mem_heap_extra_B=926
+mem_stacks_B=0
+heap_tree=detailed
+n8: 10690 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5760 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 5760 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 5760 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 5760 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1560 0x49B0C2F: __check_pf (in /usr/lib/libc-2.32.so)
+  n1: 1560 0x497D880: getaddrinfo (in /usr/lib/libc-2.32.so)
+   n1: 1560 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+    n1: 1560 0xC0000CA5BF: ???
+     n1: 1560 0xC0000CA57F: ???
+      n1: 1560 0xFFFFFFFFFFFFFFFE: ???
+       n1: 1560 0x2: ???
+        n1: 1560 0x1: ???
+         n1: 1560 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+          n1: 1560 0x1FFEFFFB7F: ???
+           n1: 1560 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+            n1: 1560 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+             n0: 1560 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC0000CA5BF: ???
+                  n1: 1202 0xC0000CA57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n1: 1202 0x2: ???
+                     n1: 1202 0x1: ???
+                      n1: 1202 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                       n1: 1202 0x1FFEFFFB7F: ???
+                        n1: 1202 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                         n1: 1202 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                          n0: 1202 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC0000CA5BF: ???
+       n1: 1166 0xC0000CA57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n1: 1166 0x2: ???
+          n1: 1166 0x1: ???
+           n1: 1166 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+            n1: 1166 0x1FFEFFFB7F: ???
+             n1: 1166 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+              n1: 1166 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+               n0: 1166 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 334 in 19 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC0000CA5BF: ???
+      n1: 260 0xC0000CA57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n1: 260 0x2: ???
+         n1: 260 0x1: ???
+          n1: 260 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+           n1: 260 0x1FFEFFFB7F: ???
+            n1: 260 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+             n1: 260 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+              n0: 260 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC0000CA5BF: ???
+            n1: 216 0xC0000CA57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n1: 216 0x2: ???
+               n1: 216 0x1: ???
+                n1: 216 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                 n1: 216 0x1FFEFFFB7F: ???
+                  n1: 216 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                   n1: 216 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                    n0: 216 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC0000CA5BF: ???
+                n1: 192 0xC0000CA57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n1: 192 0x2: ???
+                   n1: 192 0x1: ???
+                    n1: 192 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                     n1: 192 0x1FFEFFFB7F: ???
+                      n1: 192 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                       n1: 192 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                        n0: 192 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+#-----------
+snapshot=33
+#-----------
+time=10436974280
+mem_heap_B=10666
+mem_heap_extra_B=894
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=10501841076
+mem_heap_B=10690
+mem_heap_extra_B=926
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=10501908637
+mem_heap_B=11530
+mem_heap_extra_B=918
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=10507492740
+mem_heap_B=11554
+mem_heap_extra_B=950
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=10507493652
+mem_heap_B=11818
+mem_heap_extra_B=926
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=10507591763
+mem_heap_B=11842
+mem_heap_extra_B=958
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=10507604843
+mem_heap_B=12394
+mem_heap_extra_B=942
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=10508013390
+mem_heap_B=12418
+mem_heap_extra_B=974
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=10508014302
+mem_heap_B=12682
+mem_heap_extra_B=950
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=10508175057
+mem_heap_B=12706
+mem_heap_extra_B=982
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=10508194821
+mem_heap_B=13258
+mem_heap_extra_B=966
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=10508830433
+mem_heap_B=13282
+mem_heap_extra_B=998
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=10508830809
+mem_heap_B=13570
+mem_heap_extra_B=1006
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=10509556517
+mem_heap_B=13570
+mem_heap_extra_B=1006
+mem_stacks_B=0
+heap_tree=peak
+n8: 13570 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8640 0x40142EB: _dl_allocate_tls (in /usr/lib/ld-2.32.so)
+  n1: 8640 0x487B13C: pthread_create@@GLIBC_2.2.5 (in /usr/lib/libpthread-2.32.so)
+   n1: 8640 0x401410: _cgo_try_pthread_create (in /home/felix/inovex/thesis/bridge/bridge)
+    n0: 8640 0x7FFFFF: ??? (in /home/felix/inovex/thesis/bridge/bridge)
+ n1: 1560 0x49B0C2F: __check_pf (in /usr/lib/libc-2.32.so)
+  n1: 1560 0x497D880: getaddrinfo (in /usr/lib/libc-2.32.so)
+   n1: 1560 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+    n1: 1560 0xC0000CA5BF: ???
+     n1: 1560 0xC0000CA57F: ???
+      n1: 1560 0xFFFFFFFFFFFFFFFE: ???
+       n1: 1560 0x2: ???
+        n1: 1560 0x1: ???
+         n1: 1560 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+          n1: 1560 0x1FFEFFFB7F: ???
+           n1: 1560 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+            n1: 1560 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+             n0: 1560 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1202 0x400D124: _dl_new_object (in /usr/lib/ld-2.32.so)
+  n1: 1202 0x4009095: _dl_map_object_from_fd (in /usr/lib/ld-2.32.so)
+   n1: 1202 0x400A71C: _dl_map_object (in /usr/lib/ld-2.32.so)
+    n1: 1202 0x40153D0: dl_open_worker (in /usr/lib/ld-2.32.so)
+     n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+      n1: 1202 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+       n1: 1202 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+        n1: 1202 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+         n1: 1202 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+          n1: 1202 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+           n1: 1202 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+            n1: 1202 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+             n1: 1202 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+              n1: 1202 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+               n1: 1202 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+                n1: 1202 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+                 n1: 1202 0xC0000CA5BF: ???
+                  n1: 1202 0xC0000CA57F: ???
+                   n1: 1202 0xFFFFFFFFFFFFFFFE: ???
+                    n1: 1202 0x2: ???
+                     n1: 1202 0x1: ???
+                      n1: 1202 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                       n1: 1202 0x1FFEFFFB7F: ???
+                        n1: 1202 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                         n1: 1202 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                          n0: 1202 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 1166 0x49B55FD: nss_parse_service_list (in /usr/lib/libc-2.32.so)
+  n1: 1166 0x49B5FCB: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+   n1: 1166 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+    n1: 1166 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+     n1: 1166 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+      n1: 1166 0xC0000CA5BF: ???
+       n1: 1166 0xC0000CA57F: ???
+        n1: 1166 0xFFFFFFFFFFFFFFFE: ???
+         n1: 1166 0x2: ???
+          n1: 1166 0x1: ???
+           n1: 1166 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+            n1: 1166 0x1FFEFFFB7F: ???
+             n1: 1166 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+              n1: 1166 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+               n0: 1166 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n0: 334 in 19 places, all below massif's threshold (1.00%)
+ n1: 260 0x49B5FA4: __nss_database_lookup2 (in /usr/lib/libc-2.32.so)
+  n1: 260 0x497C525: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+   n1: 260 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+    n1: 260 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+     n1: 260 0xC0000CA5BF: ???
+      n1: 260 0xC0000CA57F: ???
+       n1: 260 0xFFFFFFFFFFFFFFFE: ???
+        n1: 260 0x2: ???
+         n1: 260 0x1: ???
+          n1: 260 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+           n1: 260 0x1FFEFFFB7F: ???
+            n1: 260 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+             n1: 260 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+              n0: 260 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 216 0x49226E4: __libc_alloc_buffer_allocate (in /usr/lib/libc-2.32.so)
+  n1: 216 0x49B4BD8: __resolv_conf_allocate (in /usr/lib/libc-2.32.so)
+   n1: 216 0x49B2693: __resolv_conf_load (in /usr/lib/libc-2.32.so)
+    n1: 216 0x49B484E: __resolv_conf_get_current (in /usr/lib/libc-2.32.so)
+     n1: 216 0x49B3174: __res_vinit (in /usr/lib/libc-2.32.so)
+      n1: 216 0x49B3F7A: maybe_init (in /usr/lib/libc-2.32.so)
+       n1: 216 0x49B4102: __resolv_context_get (in /usr/lib/libc-2.32.so)
+        n1: 216 0x497C53A: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+         n1: 216 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+          n1: 216 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+           n1: 216 0xC0000CA5BF: ???
+            n1: 216 0xC0000CA57F: ???
+             n1: 216 0xFFFFFFFFFFFFFFFE: ???
+              n1: 216 0x2: ???
+               n1: 216 0x1: ???
+                n1: 216 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                 n1: 216 0x1FFEFFFB7F: ???
+                  n1: 216 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                   n1: 216 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                    n0: 216 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+ n1: 192 0x4012C25: _dl_check_map_versions (in /usr/lib/ld-2.32.so)
+  n1: 192 0x4015482: dl_open_worker (in /usr/lib/ld-2.32.so)
+   n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+    n1: 192 0x4014F3D: _dl_open (in /usr/lib/ld-2.32.so)
+     n1: 192 0x49CD4A0: do_dlopen (in /usr/lib/libc-2.32.so)
+      n1: 192 0x49CE087: _dl_catch_exception (in /usr/lib/libc-2.32.so)
+       n1: 192 0x49CE152: _dl_catch_error (in /usr/lib/libc-2.32.so)
+        n1: 192 0x49CD5A6: dlerror_run (in /usr/lib/libc-2.32.so)
+         n1: 192 0x49CD639: __libc_dlopen_mode (in /usr/lib/libc-2.32.so)
+          n1: 192 0x49B5AA8: nss_load_library (in /usr/lib/libc-2.32.so)
+           n1: 192 0x49B62D8: __nss_lookup_function (in /usr/lib/libc-2.32.so)
+            n1: 192 0x497C0AB: gaih_inet.constprop.0 (in /usr/lib/libc-2.32.so)
+             n1: 192 0x497CFC8: getaddrinfo (in /usr/lib/libc-2.32.so)
+              n1: 192 0x4010F4: _cgo_26061493d47f_C2func_getaddrinfo (in /home/felix/inovex/thesis/bridge/bridge)
+               n1: 192 0xC0000CA5BF: ???
+                n1: 192 0xC0000CA57F: ???
+                 n1: 192 0xFFFFFFFFFFFFFFFE: ???
+                  n1: 192 0x2: ???
+                   n1: 192 0x1: ???
+                    n1: 192 0x46B82F: runtime.asmcgocall (/usr/lib/go/src/runtime/asm_amd64.s:656)
+                     n1: 192 0x1FFEFFFB7F: ???
+                      n1: 192 0x440B5C: runtime.park_m (/usr/lib/go/src/runtime/proc.go:2851)
+                       n1: 192 0x469E1A: runtime.mcall (/usr/lib/go/src/runtime/asm_amd64.s:318)
+                        n0: 192 0x469D13: runtime.rt0_go (/usr/lib/go/src/runtime/asm_amd64.s:220)
+#-----------
+snapshot=47
+#-----------
+time=10509556517
+mem_heap_B=13546
+mem_heap_extra_B=974
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=12384491253
+mem_heap_B=11986
+mem_heap_extra_B=958
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=12384494551
+mem_heap_B=8656
+mem_heap_extra_B=280
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=12384494585
+mem_heap_B=8640
+mem_heap_extra_B=256
+mem_stacks_B=0
+heap_tree=empty
