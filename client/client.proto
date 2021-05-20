@@ -1,11 +1,11 @@
 syntax = "proto3";
-package mqtt;
-option go_package = ".;mqtt";
+package client;
+option go_package = "/.;client";
 
 message DataPacket {
   bytes Data = 1;
 }
 
-service MqttService {
+service Bridge {
   rpc NewClient(stream DataPacket) returns (stream DataPacket) {}
 }

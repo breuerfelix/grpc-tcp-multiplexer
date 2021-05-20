@@ -20,7 +20,7 @@ func main() {
 
 	for i := 0; i < 20000; i++ {
 		go dummy()
-    log.Println("Client started:", i)
+		log.Println("Client started:", i)
 
 		min := 1
 		max := 10
@@ -29,21 +29,20 @@ func main() {
 	}
 
 	log.Println("Stresser going ...")
-  dummy()
+	dummy()
 }
 
 func dummy() {
 	// tcp client
 	conn, _ := net.Dial(CONN_TYPE, CONN_HOST+":"+CONN_PORT)
 	for {
-		text := "hallo test"
+		text := "hello world"
 		fmt.Fprintf(conn, text)
 
-    data, _ := readData(conn)
-    if string(data) != text {
-      log.Println("wrong!")
-    }
-		//log.Println(string(message))
+		data, _ := readData(conn)
+		if string(data) != text {
+			log.Println("Error: Didn't receive what i sent.")
+		}
 
 		min := 5
 		max := 20

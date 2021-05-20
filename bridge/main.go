@@ -1,7 +1,7 @@
 package main
 
 import (
-	mqtt "github.com/breuerfelix/thesis/grpc-tcp-multiplexer"
+	bridge "github.com/breuerfelix/grpc-tcp-multiplexer/client"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"log"
@@ -18,16 +18,16 @@ const (
 
 func main() {
 	// grpc client
-  conn, err := grpc.Dial("185.113.124.212:1884", grpc.WithInsecure())
+	conn, err := grpc.Dial("localhost:4444", grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("did not connect: %s", err)
 	}
 
-  log.Println("Connected!")
+	log.Println("Connected!")
 
 	defer conn.Close()
 
-	c := mqtt.NewMqttServiceClient(conn)
+	c := bridge.NewBridgeClient(conn)
 
 	// tcp server
 	l, err := net.Listen(CONN_TYPE, CONN_HOST+":"+CONN_PORT)
@@ -45,7 +45,7 @@ func main() {
 
 }
 
-func runServer(listener *net.Listener, client *mqtt.MqttServiceClient) {
+func runServer(listener *net.Listener, client *bridge.BridgeClient) {
 	for {
 		// Listen for an incoming connection.
 		conn, err := (*listener).Accept()
@@ -54,12 +54,11 @@ func runServer(listener *net.Listener, client *mqtt.MqttServiceClient) {
 			continue
 		}
 
-    //log.Println("Accepted Client")
 		go handleConnection(conn, client)
 	}
 }
 
-func handleConnection(conn net.Conn, client *mqtt.MqttServiceClient) {
+func handleConnection(conn net.Conn, client *bridge.BridgeClient) {
 	defer conn.Close()
 
 	c := *client
@@ -72,27 +71,25 @@ func handleConnection(conn net.Conn, client *mqtt.MqttServiceClient) {
 	for {
 		data, err := readData(conn)
 		if err != nil {
-			//log.Println("Error reading:", err.Error())
+			log.Println("Error reading:", err.Error())
 			break
 		}
 
-		//log.Println("Got data from client on bridge:", string(data))
-		stream.Send(&mqtt.DataPacket{Data: data})
+		stream.Send(&bridge.DataPacket{Data: data})
 	}
 }
 
-func handleReadConnection(conn *net.Conn, client *mqtt.MqttService_NewClientClient) {
+func handleReadConnection(conn *net.Conn, client *bridge.Bridge_NewClientClient) {
 	cStream := *client
 	cConn := *conn
 
 	for {
 		data, err := cStream.Recv()
 		if err != nil {
-			//log.Println("Error reading:", err.Error())
+			log.Println("Error reading:", err.Error())
 			break
 		}
 
-		//log.Println("Got data from broker on bridge:", string(data.Data))
 		cConn.Write(data.Data)
 	}
 }
